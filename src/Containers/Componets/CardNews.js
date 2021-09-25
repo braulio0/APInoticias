@@ -9,7 +9,7 @@ const CardNews = ({ publicado, nombre , imagen, description }) => {
       <p> {description}</p>
       <p> aqui es image {imagen}</p>
 
-      <img src={imagen}/>
+      <img src={imagen} alt="imagen"/>
     </div>
   )
 
