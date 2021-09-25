@@ -7,6 +7,11 @@ useEffect(() => {
 const nota = consumeApiNoticias();
   console.log(nota)
 }, [])
+useEffect(() => {
+console.log("hola");
+
+//console.log(news[0].);
+},[news])
 const consumeApiNoticias = async() => {
 const data = await fetch("https://bing-news-search1.p.rapidapi.com/news?textFormat=Raw&safeSearch=Off", {
 	"method": "GET",

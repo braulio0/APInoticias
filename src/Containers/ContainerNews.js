@@ -2,17 +2,17 @@ import React from 'react';
 import CardNews from './Componets/CardNews';
 
 const ContainerNews = ({news}) => {
-return(
+  return(
   <div>
     {
-      news.map(({datePublished, name, image ,description}) => (
+      news.map((n, index) => (
         <CardNews 
-          publicado={datePublished}
-          nombre={name}
-          description={description} 
-          image={image}
-        />
-    )
+         publicado={n.datePublished}
+         nombre={n.name}
+        description={n.description} 
+          imagen={n.image.thumbnail.contentUrl}
+        /> 
+         )
       )
     }
 </div>
